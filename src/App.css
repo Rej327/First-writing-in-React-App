@@ -44,4 +44,34 @@ p {
 
 .links a:hover {
   color: rgb(1, 117, 117);
+  border-bottom: 1px solid cyan;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.myflex {
+  display: flex;
+  border: 1px solid black;
+  max-width: 700px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  min-height: 300px;
+  color: white;
+}
+.myflex .left-section {
+  background-color: black;
+  height: 100%;
+  width: 80%;
+}
+
+.right-section {
+  background-color: red;
+  width: 80%;
+}
+
+.grid-Style {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 100px;
 }

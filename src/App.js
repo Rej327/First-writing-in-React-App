@@ -1,6 +1,8 @@
 import "./App.css";
 import Navbar from "./Navbar";
 import Home from "./Home";
+import ThisIsFlex from "./flex";
+import GridStyle from "./grid";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Navbar />
       <div className="content">
         <Home />
+        <ThisIsFlex />
+        <GridStyle />
       </div>
     </div>
   );
