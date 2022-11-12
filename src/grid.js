@@ -10,7 +10,7 @@ const GridStyle = () => {
         <h2 className="grid-text">{text} 2</h2>
       </div>
       <div className="grid-one">
-        <h2 className="grid-text">{text}</h2>
+        <h2 className="grid-text">{text} 3</h2>
       </div>
     </div>
   );
