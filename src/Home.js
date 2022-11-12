@@ -8,7 +8,11 @@ const Home = () => {
       <h1> {title} </h1>
       <p>Implementing my {language} skills in React App.</p>
       <p>
-        My <a href={fbLink}>Facebook account here.</a>
+        My{" "}
+        <a href={fbLink} target="_blank">
+          Facebook account{" "}
+        </a>
+        here.
       </p>
     </div>
   );
