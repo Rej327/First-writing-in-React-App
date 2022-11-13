@@ -78,3 +78,22 @@ p {
   padding: 10px;
   gap: 100px;
 }
+
+.info-preview {
+  margin: auto;
+  max-width: 600px;
+}
+
+.info-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.info-preview .state-head,
+.state-body {
+  font-family: cursive;
+}
+
+.state-head {
+  color: rgb(0, 85, 85);
+}

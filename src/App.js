@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import ThisIsFlex from "./flex";
 import GridStyle from "./grid";
+import AboutMe from "./AboutMe";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Home />
         <ThisIsFlex />
         <GridStyle />
+        <AboutMe />
       </div>
     </div>
   );
