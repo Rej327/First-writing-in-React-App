@@ -17,7 +17,7 @@ const AboutMe = () => {
   ]);
 
   return (
-    <div className="about-me">
+    <div className="about-me" id="aboutme">
       {info.map((infos) => (
         <div className="info-preview" key={infos.id}>
           <h2 className="state-head">{infos.head}</h2>
