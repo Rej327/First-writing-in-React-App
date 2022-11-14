@@ -1,23 +1,25 @@
-import "./App.css";
-import Navbar from "./Navbar";
-import Home from "./Home";
-import ThisIsFlex from "./flex";
-import GridStyle from "./grid";
-import AboutMe from "./AboutMe";
+import "./index.css";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import ThisIsFlex from "./components/flex";
+import GridStyle from "./components/grid";
+import AboutMe from "./components/AboutMe";
 import Other from "./components/others";
-
+import { BrowserRouter, Link, Route, Routes, Router } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className="content">
-        <Home />
-        <ThisIsFlex />
-        <GridStyle />
-        <AboutMe />
-        <Other />
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Home />
+          <ThisIsFlex />
+          <GridStyle />
+          <AboutMe />
+          <Other />
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

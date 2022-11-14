@@ -9,7 +9,7 @@ const Home = () => {
       <p>Implementing my {language} skills in React App.</p>
       <p>
         My{" "}
-        <a href={fbLink} target="_blank">
+        <a href={fbLink} rel="noopener noreferrer" target="_blank">
           Facebook account{" "}
         </a>
         here.

@@ -1,13 +1,136 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.content {
+  padding-top: 60px;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+
+.nav-div {
+  max-width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  position: fixed;
+  background-color: #fafafa;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.links {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.links a:hover {
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(0, 85, 85);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.myflex {
+  display: flex;
+  border: 1px solid black;
+  max-width: 700px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  min-height: 300px;
+  color: white;
+  padding: 10px;
+}
+.myflex .left-section {
+  background-color: black;
+  height: 100%;
+  width: 300px;
+}
+
+.right-section {
+  background-color: red;
+  width: 300px;
+}
+
+.grid-Style {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 100px;
+}
+
+.info-preview {
+  margin: auto;
+  max-width: 600px;
+  padding: 2px;
+}
+
+.info-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.info-preview .state-head,
+.state-body {
+  font-family: cursive;
+}
+
+.state-head {
+  color: rgb(0, 85, 85);
 }
