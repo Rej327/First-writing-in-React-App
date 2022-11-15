@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HiHome } from "react-icons/hi";
+import { FcAbout } from "react-icons/fc";
 
 const Navbar = () => {
-  const style = { marginBottom: "-2px" };
+  const style = { marginBottom: "-2px", marginRight: "2px" };
 
   return (
     <div className="nav-div">
@@ -16,7 +17,11 @@ const Navbar = () => {
               Home
             </Link>
           </div>
-          <Link to="/about">About Me</Link>
+          <Link to="/about">
+            {" "}
+            <FcAbout style={style} />
+            About Me
+          </Link>
           <Link to="/contact">Contact</Link>
         </div>
       </nav>
