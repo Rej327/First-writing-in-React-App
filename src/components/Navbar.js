@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HiHome } from "react-icons/hi";
 import { FcAbout } from "react-icons/fc";
-
+import { IoMdContact } from "react-icons/io";
 const Navbar = () => {
   const style = { marginBottom: "-2px", marginRight: "2px" };
 
@@ -18,11 +18,13 @@ const Navbar = () => {
             </Link>
           </div>
           <Link to="/about">
-            {" "}
             <FcAbout style={style} />
             About Me
           </Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">
+            <IoMdContact style={style} />
+            Contact
+          </Link>
         </div>
       </nav>
     </div>
